@@ -15,4 +15,12 @@ public class CommandService {
         this.taskRepository = taskRepository;
     }
 
+    public boolean checkIsCommand(String string) {
+        return commands.checkIsCommand(string);
+    }
+
+    public String getValueOfCommand(String string) {
+        return commands.getValue(string);
+    }
+
 }
